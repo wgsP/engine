@@ -1,4 +1,4 @@
-module github.com/Monibuca/engine/v3
+module github.com/wgsP/engine/v3
 
 go 1.13
 
