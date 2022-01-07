@@ -135,6 +135,31 @@ func Run(ctx context.Context, configFile string) (err error) {
 		}
 	}
 }
+
+func RunNacos(ctx context.Context, configFile string, nacosConfig NacosConfig) (err error) {
+	err = nacosConfig.Init()
+	if err != nil {
+		return
+	}
+
+	conf, err := nacosConfig.getConfig()
+	if err != nil {
+		return
+	}
+	fmt.Println(conf)
+
+	if err = ioutil.WriteFile(configFile, []byte(conf), 0644); err != nil {
+		return
+	}
+
+	if _, err = nacosConfig.register(); err != nil {
+		return
+	}
+
+	return Run(ctx, configFile)
+
+}
+
 func objectAssign(target, source map[string]interface{}) {
 	for k, v := range source {
 		if _, ok := target[k]; !ok {
