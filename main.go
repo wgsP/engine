@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time" // colorable
 
-	"github.com/Monibuca/utils/v3"
+	"github.com/wgsP/utils/v3"
 	"github.com/google/uuid"
 
-	"github.com/Monibuca/engine/v3/util"
+	"github.com/wgsP/engine/v3/util"
 
 	"github.com/BurntSushi/toml"
 	. "github.com/logrusorgru/aurora"

@@ -6,8 +6,8 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/Monibuca/utils/v3"
-	"github.com/Monibuca/utils/v3/codec"
+	"github.com/wgsP/utils/v3"
+	"github.com/wgsP/utils/v3/codec"
 )
 
 const (

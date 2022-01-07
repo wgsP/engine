@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	utils "github.com/Monibuca/utils/v3"
+	utils "github.com/wgsP/utils/v3"
 	. "github.com/logrusorgru/aurora"
 	"github.com/pkg/errors"
 )
